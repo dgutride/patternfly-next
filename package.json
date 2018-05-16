@@ -119,5 +119,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dgutride/patternfly-next.git"
+  },
+  "release": {
+    "branch": "release"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "alpha"
   }
 }
