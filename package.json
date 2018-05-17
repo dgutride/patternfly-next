@@ -121,7 +121,18 @@
     "url": "https://github.com/dgutride/patternfly-next.git"
   },
   "release": {
-    "branch": "release"
+    "branch": "release",
+    "analyzeCommits": {
+      "preset": "angular",
+      "releaseRules": [
+        {"type": "breaking", "release": "patch"},
+        {"type": "feat", "release": "patch"},
+        {"type": "fix", "release": "patch"},
+        {"type": "perf", "release": "patch"},
+        {"type": "docs", "release": "patch"},
+        {"type": "refactor", "release": "patch"}
+      ]
+    }
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
