@@ -80,7 +80,7 @@ const plugins = [
 
 module.exports = {
   siteMetadata: {
-    title: 'PF Next '
+    title: 'PF Next'
   },
   pathPrefix: '/patternfly-next',
   plugins
