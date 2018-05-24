@@ -1,5 +1,5 @@
 {
-  "name": "@patternfly/patternfly-next",
+  "name": "dg-angular-patternfly-accessible",
   "description": "Assets, source, tooling, and content for PatternFly Next",
   "version": "0.0.0-development",
   "author": "Andres Galante",
@@ -26,9 +26,7 @@
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "node test/test.js",
-    "semantic-release": "semantic-release pre && copy package.json dist && npm publish dist && semantic-release post",
-    "semantic-release-post": "semantic-release post",
-    "semantic-release-pre": "semantic-release pre"
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "*.js": [
@@ -120,7 +118,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patternfly/patternfly-next.git"
+    "url": "https://github.com/dgutride/patternfly-next.git"
   },
   "release": {
     "branch": "release",
@@ -134,7 +132,13 @@
         {"type": "docs", "release": "patch"},
         {"type": "refactor", "release": "patch"}
       ]
-    }
+    },
+    "publish": [
+      {
+        "path": "@semantic-release/npm",
+        "pkgRoot": "dist"
+      }
+    ]
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
