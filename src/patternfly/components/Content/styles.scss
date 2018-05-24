@@ -1,90 +1,86 @@
 @import "../../patternfly-utilities";
 
-// stylelint-disable
 :root {
+  // Body
+  --pf-c-content--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--LineHeight: var(--pf-global--LineHeight--md);
+  --pf-c-content--FontSize: var(--pf-global--FontSize--md);
+  --pf-c-content--FontWeight: var(--pf-global--FontWeight--normal);
+
   // h1 - Main title
-  --pf-c-content--h1--MarginTop: var(--global--spacer--md);
-  --pf-c-content--h1--MarginBottom: var(--global--spacer);
-  --pf-c-content--h1--LineHeight: var(--global--LineHeight--sm);
-  --pf-c-content--h1--FontSize: var(--global--FontSize--xxl);
-  --pf-c-content--h1--FontWeight: var(--global--FontWeight--normal);
+  --pf-c-content--h1--MarginTop: var(--pf-global--spacer--lg);
+  --pf-c-content--h1--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--h1--LineHeight: var(--pf-global--LineHeight--sm);
+  --pf-c-content--h1--FontSize: var(--pf-global--FontSize--xxxl);
+  --pf-c-content--h1--FontWeight: var(--pf-global--FontWeight--normal);
 
   // h2 - Secondary title
-  --pf-c-content--h2--MarginTop: var(--global--spacer--md);
-  --pf-c-content--h2--MarginBottom: var(--global--spacer);
-  --pf-c-content--h2--LineHeight: var(--global--LineHeight--sm);
-  --pf-c-content--h2--FontSize: var(--global--FontSize--xl);
-  --pf-c-content--h2--FontWeight: var(--global--FontWeight--normal);
+  --pf-c-content--h2--MarginTop: var(--pf-global--spacer--lg);
+  --pf-c-content--h2--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--h2--LineHeight: var(--pf-global--LineHeight--sm);
+  --pf-c-content--h2--FontSize: var(--pf-global--FontSize--xxl);
+  --pf-c-content--h2--FontWeight: var(--pf-global--FontWeight--normal);
 
   // h3 - Sub-title
-  --pf-c-content--h3--MarginTop: var(--global--spacer--md);
-  --pf-c-content--h3--MarginBottom: var(--global--spacer);
-  --pf-c-content--h3--LineHeight: var(--global--md--LineHeight);
-  --pf-c-content--h3--FontSize: var(--global--FontSize--lg);
-  --pf-c-content--h3--FontWeight: var(--global--FontWeight--normal);
+  --pf-c-content--h3--MarginTop: var(--pf-global--spacer--lg);
+  --pf-c-content--h3--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--h3--LineHeight: var(--pf-global--LineHeight--md);
+  --pf-c-content--h3--FontSize: var(--pf-global--FontSize--xl);
+  --pf-c-content--h3--FontWeight: var(--pf-global--FontWeight--normal);
 
   // h4
-  --pf-c-content--h4--MarginTop: var(--global--spacer--md);
-  --pf-c-content--h4--MarginBottom: var(--global--spacer);
-  --pf-c-content--h4--LineHeight: var(--global--md--LineHeight);
-  --pf-c-content--h4--FontSize: var(--global--FontSize--md);
-  --pf-c-content--h4--FontWeight: var(--global--FontWeight--semi-bold);
+  --pf-c-content--h4--MarginTop: var(--pf-global--spacer--lg);
+  --pf-c-content--h4--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--h4--LineHeight: var(--pf-global--LineHeight--md);
+  --pf-c-content--h4--FontSize: var(--pf-global--FontSize--lg);
+  --pf-c-content--h4--FontWeight: var(--pf-global--FontWeight--semi-bold);
 
   // h5
-  --pf-c-content--h5--MarginTop: var(--global--spacer--md);
-  --pf-c-content--h5--MarginBottom: var(--global--spacer);
-  --pf-c-content--h5--LineHeight: var(--global--LineHeight--lg);
-  --pf-c-content--h5--FontSize: var(--global--FontSize);
-  --pf-c-content--h5--FontWeight: var(--global--FontWeight--semi-bold);
+  --pf-c-content--h5--MarginTop: var(--pf-global--spacer--lg);
+  --pf-c-content--h5--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--h5--LineHeight: var(--pf-global--LineHeight--md);
+  --pf-c-content--h5--FontSize: var(--pf-global--FontSize--md);
+  --pf-c-content--h5--FontWeight: var(--pf-global--FontWeight--semi-bold);
 
   // h6
-  --pf-c-content--h6--MarginTop: var(--global--spacer--md);
-  --pf-c-content--h6--MarginBottom: var(--global--spacer--xs);
-  --pf-c-content--h6--LineHeight: var(--global--LineHeight--lg);
-  --pf-c-content--h6--FontSize: var(--global--FontSize);
-  --pf-c-content--h6--FontWeight: var(--global--FontWeight--semi-bold);
-
-
-  // Body
-  --pf-c-content--MarginBottom: var(--global--spacer);
-  --pf-c-content--LineHeight: var(--global--LineHeight--lg);
-  --pf-c-content--FontSize: var(--global--FontSize);
-  --pf-c-content--FontWeight: var(--global--FontWeight--normal);
+  --pf-c-content--h6--MarginTop: var(--pf-global--spacer--lg);
+  --pf-c-content--h6--MarginBottom: var(--pf-global--spacer--xs);
+  --pf-c-content--h6--LineHeight: var(--pf-global--LineHeight--md);
+  --pf-c-content--h6--FontSize: var(--pf-global--FontSize--md);
+  --pf-c-content--h6--FontWeight: var(--pf-global--FontWeight--semi-bold);
 
   // Small text
-  --pf-c-content--small--MarginBottom: var(--global--spacer);
-  --pf-c-content--small--LineHeight: var(--global--LineHeight--lg);
-  --pf-c-content--small--FontSize: var(--global--FontSize--sm);
-  --pf-c-content--small--Color: var(--global--Color--dark-alt);
+  --pf-c-content--small--MarginBottom: var(--pf-global--spacer--md);
+  --pf-c-content--small--LineHeight: var(--pf-global--LineHeight--md);
+  --pf-c-content--small--FontSize: var(--pf-global--FontSize--sm);
+  --pf-c-content--small--Color: var(--pf-global--Color--dark-200);
 
   // Links
-  --pf-c-content--a--Color: var(--global--link--Color);
-  --pf-c-content--a--TextDecoration: var(--global--link--TextDecoration);
-  --pf-c-content--a--hover--Color: var(--global--link--Color--hover);
-  --pf-c-content--a--hover--TextDecoration: var(--global--link--TextDecoration--hover);
+  --pf-c-content--a--Color: var(--pf-global--link--Color);
+  --pf-c-content--a--TextDecoration: var(--pf-global--link--TextDecoration);
+  --pf-c-content--a--hover--Color: var(--pf-global--link--Color--hover);
+  --pf-c-content--a--hover--TextDecoration: var(--pf-global--link--TextDecoration--hover);
 
   // Blockquote
-  --pf-c-content--blockquote--Padding: var(--global--spacer);
-  --pf-c-content--blockquote--FontWeight: var(--global--FontWeight--light);
-  --pf-c-content--blockquote--Color: var(--global--Color--dark-alt);
-  --pf-c-content--blockquote--BorderLeftColor: var(--global--BorderColor--light);
-  --pf-c-content--blockquote--BorderLeftWidth: var(--global--BorderWidth--md);
+  --pf-c-content--blockquote--Padding: var(--pf-global--spacer--md);
+  --pf-c-content--blockquote--FontWeight: var(--pf-global--FontWeight--light);
+  --pf-c-content--blockquote--Color: var(--pf-global--Color--dark-200);
+  --pf-c-content--blockquote--BorderLeftColor: var(--pf-global--BorderColor--light);
+  --pf-c-content--blockquote--BorderLeftWidth: var(--pf-global--BorderWidth--lg);
 
   // Lists
-  --pf-c-content--ul--PaddingLeft: var(--global--spacer--md);
-  --pf-c-content--ol--MarginTop: var(--global--spacer);
-  --pf-c-content--ol--MarginLeft: var(--global--spacer--md);
-  --pf-c-content--ul--MarginTop: var(--global--spacer);
-  --pf-c-content--ul--MarginLeft: var(--global--spacer--md);
-  --pf-c-content--ul--nested--MarginTop: var(--global--spacer--sm);
-  --pf-c-content--ul--nested--MarginLeft: var(--global--spacer--sm);
+  --pf-c-content--ul--PaddingLeft: var(--pf-global--spacer--lg);
+  --pf-c-content--ol--MarginTop: var(--pf-global--spacer--md);
+  --pf-c-content--ol--MarginLeft: var(--pf-global--spacer--lg);
+  --pf-c-content--ul--MarginTop: var(--pf-global--spacer--md);
+  --pf-c-content--ul--MarginLeft: var(--pf-global--spacer--lg);
+  --pf-c-content--ul--nested--MarginTop: var(--pf-global--spacer--sm);
+  --pf-c-content--ul--nested--MarginLeft: var(--pf-global--spacer--sm);
   --pf-c-content--ul--ListStyle: var(--global-ListStyle);
-  --pf-c-content--li--MarginTop: var(--global--spacer--sm);
-  --pf-c-content--dd--MarginBottom: var(--global--spacer--sm);
-  --pf-c-content--dd--MarginLeft: var(--global--spacer--md);
+  --pf-c-content--li--MarginTop: var(--pf-global--spacer--sm);
+  --pf-c-content--dd--MarginBottom: var(--pf-global--spacer--sm);
+  --pf-c-content--dd--MarginLeft: var(--pf-global--spacer--lg);
 }
-
-// stylelint-enable
 
 .pf-c-content {
   font-size: var(--pf-c-content--FontSize);
@@ -138,6 +134,7 @@
     font-size: var(--pf-c-content--h1--FontSize);
     font-weight: var(--pf-c-content--h1--FontWeight);
     line-height: var(--pf-c-content--h1--LineHeight);
+
     &:not(:first-child) {
       margin-top: var(--pf-c-content--h1--MarginTop);
     }
@@ -148,6 +145,7 @@
     font-size: var(--pf-c-content--h2--FontSize);
     font-weight: var(--pf-c-content--h2--FontWeight);
     line-height: var(--pf-c-content--h2--LineHeight);
+
     &:not(:first-child) {
       margin-top: var(--pf-c-content--h2--MarginTop);
     }
@@ -155,19 +153,21 @@
 
   h3 {
     margin-bottom: var(--pf-c-content--h3--MarginBottom);
-    font-size: var(--pf-c-content--h3--FontSize125rem);
+    font-size: var(--pf-c-content--h3--FontSize);
     font-weight: var(--pf-c-content--h3--FontWeight);
     line-height: var(--pf-c-content--h3--LineHeight);
+
     &:not(:first-child) {
       margin-top: var(--pf-c-content--h3--MarginTop);
     }
   }
 
   h4 {
-    margin-bottom: var(--pf-c-content--h4--MarginBottom),;
+    margin-bottom: var(--pf-c-content--h4--MarginBottom);
     font-size: var(--pf-c-content--h4--FontSize);
     font-weight: var(--pf-c-content--h4--FontWeight);
     line-height: var(--pf-c-content--h4--LineHeight);
+
     &:not(:first-child) {
       margin-top: var(--pf-c-content--h4--MarginTop);
     }
@@ -178,6 +178,7 @@
     font-size: var(--pf-c-content--h5--FontSize);
     font-weight: var(--pf-c-content--h5--FontWeight);
     line-height: var(--pf-c-content--h5--LineHeight);
+
     &:not(:first-child) {
       margin-top: var(--pf-c-content--h5--MarginTop);
     }
@@ -188,6 +189,7 @@
     font-size: var(--pf-c-content--h6--FontSize);
     font-weight: var(--pf-c-content--h6--FontWeight);
     line-height: var(--pf-c-content--h6--LineHeight);
+
     &:not(:first-child) {
       margin-top: var(--pf-c-content--h6--MarginTop);
     }
@@ -218,6 +220,7 @@
     margin-top: var(--pf-c-content--ul--MarginTop);
     margin-left: var(--pf-c-content--ul--MarginLeft);
     list-style: var(--pf-c-content--ul--ListStyle);
+
     ul {
       margin-top: var(--pf-c-content--ul--nested--MarginTop);
       margin-left: var(--pf-c-content--ul--nested--MarginLeft);
