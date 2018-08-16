@@ -7,11 +7,14 @@ const host = 'localhost';
 const globalViolations = [];
 const { pfReporter } = require('./a11yViolationsReporter');
 
-// const chromeOptions = {'args': ['--headless', '--no-sandbox']};
-// const chromeCapabilities = selenium.Capabilities.chrome();
-// chromeCapabilities.set('chromeOptions', chromeOptions);
-// const driver = new selenium.Builder().forBrowser('chrome').withCapabilities(chromeCapabilities).build();
-const driver = new selenium.Builder().forBrowser('chrome').build();
+const chromeOptions = { args: ['--headless', '--no-sandbox'] };
+const chromeCapabilities = selenium.Capabilities.chrome();
+chromeCapabilities.set('chromeOptions', chromeOptions);
+const driver = new selenium.Builder()
+  .forBrowser('chrome')
+  .withCapabilities(chromeCapabilities)
+  .build();
+// const driver = new selenium.Builder().forBrowser('chrome').build();
 const testPageA11y = testPage =>
   new Promise(resolve =>
     driver.get(`http://${host}:8000${testPage.path}`).then(() => {
